@@ -10,12 +10,18 @@ interface inputs {
 }
 
 function Input({ type, label, placeholder, max, min }: inputs) {
-  if (type == "number") {
+  if (type !== "number") {
     return (
       <>
         <Label>{label}</Label>
         <InputContainer>
-          <InputBox type={type} placeholder={placeholder} min={min} max={max} />
+          <InputBox
+            type={type}
+            placeholder={placeholder}
+            minLength={min}
+            maxLength={max}
+            autoComplete="off"
+          />
         </InputContainer>
       </>
     );
@@ -24,12 +30,7 @@ function Input({ type, label, placeholder, max, min }: inputs) {
     <>
       <Label>{label}</Label>
       <InputContainer>
-        <InputBox
-          type={type}
-          placeholder={placeholder}
-          minLength={min}
-          maxLength={max}
-        />
+        <InputBox type={type} placeholder={placeholder} min={min} max={max} />
       </InputContainer>
     </>
   );
