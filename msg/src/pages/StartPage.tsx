@@ -3,7 +3,7 @@ import { Colors } from "../styles/colors";
 import Logo from "../assets/Logo.png";
 import { useNavigate } from "react-router-dom";
 
-function MainPage() {
+function StartPage() {
   const navigate = useNavigate();
 
   const toLoginHandler = () => {
@@ -25,7 +25,7 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default StartPage;
 
 const Background = styled.div`
   width: 100%;
