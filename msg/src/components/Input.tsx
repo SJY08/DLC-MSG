@@ -10,6 +10,16 @@ interface inputs {
 }
 
 function Input({ type, label, placeholder, max, min }: inputs) {
+  if (type == "number") {
+    return (
+      <>
+        <Label>{label}</Label>
+        <InputContainer>
+          <InputBox type={type} placeholder={placeholder} min={min} max={max} />
+        </InputContainer>
+      </>
+    );
+  }
   return (
     <>
       <Label>{label}</Label>
