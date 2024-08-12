@@ -11,6 +11,10 @@ function LoginPage() {
     navigate("/signup");
   };
 
+  const toMain = () => {
+    navigate("/main");
+  };
+
   return (
     <>
       <Background>
@@ -41,7 +45,7 @@ function LoginPage() {
               max={12}
             />
           </InputWrapper>
-          <SubmitButton>로그인</SubmitButton>
+          <SubmitButton onClick={toMain}>로그인</SubmitButton>
 
           <Ask>
             회원이 아니신가요?

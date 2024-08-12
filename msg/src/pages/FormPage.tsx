@@ -2,8 +2,15 @@ import styled from "styled-components";
 import { Colors } from "../styles/colors";
 import Logo from "../assets/Logo.png";
 import Input from "../components/Input";
+import { useNavigate } from "react-router-dom";
 
 function FormPage() {
+  const navigate = useNavigate();
+
+  const toMain = () => {
+    navigate("/main");
+  };
+
   return (
     <Background>
       <LogoWrapper>
@@ -45,7 +52,7 @@ function FormPage() {
           />
         </InputWrapper>
 
-        <SubmitButton>제출하기</SubmitButton>
+        <SubmitButton onClick={toMain}>제출하기</SubmitButton>
       </Form>
     </Background>
   );
