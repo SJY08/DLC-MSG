@@ -24,7 +24,7 @@ function SignUpPage() {
         </TitleWrapper>
 
         <Form>
-          <Title>
+          <InputWrapper>
             <Input
               type="text"
               label="아이디"
@@ -34,20 +34,20 @@ function SignUpPage() {
             />
 
             <Input
-              type="passowrd"
+              type="password"
               label="비밀번호"
               placeholder="비밀번호를 입력하세요"
               min={4}
               max={12}
             />
             <Input
-              type="passowrd"
+              type="password"
               label="비밀번호 확인"
               placeholder="비밀번호를 다시 입력하세요"
               min={4}
               max={12}
             />
-          </Title>
+          </InputWrapper>
           <SubmitButton>회원가입</SubmitButton>
 
           <Ask>
@@ -140,4 +140,10 @@ const Accent = styled.span`
   font-size: 16px;
   font-weight: lighter;
   cursor: pointer;
+`;
+
+const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `;

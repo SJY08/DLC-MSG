@@ -24,7 +24,7 @@ function LoginPage() {
         </TitleWrapper>
 
         <Form>
-          <Title>
+          <InputWrapper>
             <Input
               type="text"
               label="아이디"
@@ -34,13 +34,13 @@ function LoginPage() {
             />
 
             <Input
-              type="passowrd"
+              type="password"
               label="비밀번호"
               placeholder="비밀번호를 입력하세요"
               min={4}
               max={12}
             />
-          </Title>
+          </InputWrapper>
           <SubmitButton>로그인</SubmitButton>
 
           <Ask>
@@ -134,4 +134,10 @@ const Accent = styled.span`
   font-size: 16px;
   font-weight: lighter;
   cursor: pointer;
+`;
+
+const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `;
