@@ -16,8 +16,8 @@ function Chart() {
             width: 2,
           },
         }}
-        width={1000}
-        height={400}
+        width={800}
+        height={300}
       ></ReactApexChart>
     </div>
   );
