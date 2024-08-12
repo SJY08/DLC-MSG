@@ -2,8 +2,15 @@ import styled from "styled-components";
 import { Colors } from "../styles/colors";
 import Logo from "../assets/Logo.png";
 import Input from "../components/Input";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
+  const navigate = useNavigate();
+
+  const toSignupHandler = () => {
+    navigate("/signup");
+  };
+
   return (
     <>
       <Background>
@@ -37,7 +44,8 @@ function LoginPage() {
           <SubmitButton>로그인</SubmitButton>
 
           <Ask>
-            회원이 아니신가요? <Accent>회원가입</Accent>
+            회원이 아니신가요?{" "}
+            <Accent onClick={toSignupHandler}>회원가입</Accent>
           </Ask>
         </Form>
       </Background>
