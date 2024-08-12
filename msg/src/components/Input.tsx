@@ -41,7 +41,7 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${Colors.Gray500};
+  border: 1px solid ${Colors.Gray300};
   border-radius: 10px;
   background: ${Colors.Gray50};
 `;
