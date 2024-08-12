@@ -11,6 +11,10 @@ function SignUpPage() {
     navigate("/login");
   };
 
+  const toForm = () => {
+    navigate("/form");
+  };
+
   return (
     <>
       <Background>
@@ -23,7 +27,7 @@ function SignUpPage() {
           <SubTitle>회원가입하여 MSG 서비스를 이용하세요</SubTitle>
         </TitleWrapper>
 
-        <Form>
+        <Form onSubmit={toForm}>
           <InputWrapper>
             <Input
               type="text"
@@ -48,7 +52,7 @@ function SignUpPage() {
               max={12}
             />
           </InputWrapper>
-          <SubmitButton>회원가입</SubmitButton>
+          <SubmitButton onClick={toForm}>회원가입</SubmitButton>
 
           <Ask>
             회원이신가요? <Accent onClick={toLoginHandler}>로그인</Accent>

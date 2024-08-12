@@ -44,7 +44,7 @@ function LoginPage() {
           <SubmitButton>로그인</SubmitButton>
 
           <Ask>
-            회원이 아니신가요?{" "}
+            회원이 아니신가요?
             <Accent onClick={toSignupHandler}>회원가입</Accent>
           </Ask>
         </Form>
