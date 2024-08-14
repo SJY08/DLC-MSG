@@ -5,47 +5,52 @@ import { CiViewList } from "react-icons/ci";
 import { GoPeople } from "react-icons/go";
 import { CiShoppingCart } from "react-icons/ci";
 import Chart from "../components/Charts";
+import Header from "../components/header";
 
 function MainPage() {
   return (
-    <Container>
-      <ButtonContainer>
-        <ButtonWrapper>
-          <Button>
-            <CiCircleCheck />
-          </Button>
-          <ButtonName>도전과제</ButtonName>
-        </ButtonWrapper>
+    <>
+      <Header />
 
-        <ButtonWrapper>
-          <Button>
-            <CiViewList />
-          </Button>
-          <ButtonName>취미관리</ButtonName>
-        </ButtonWrapper>
+      <Container>
+        <ButtonContainer>
+          <ButtonWrapper>
+            <Button>
+              <CiCircleCheck />
+            </Button>
+            <ButtonName>도전과제</ButtonName>
+          </ButtonWrapper>
 
-        <ButtonWrapper>
-          <Button>
-            <GoPeople />
-          </Button>
-          <ButtonName>동호회</ButtonName>
-        </ButtonWrapper>
+          <ButtonWrapper>
+            <Button>
+              <CiViewList />
+            </Button>
+            <ButtonName>취미관리</ButtonName>
+          </ButtonWrapper>
 
-        <ButtonWrapper>
-          <Button>
-            <CiShoppingCart />
-          </Button>
-          <ButtonName>상점</ButtonName>
-        </ButtonWrapper>
-      </ButtonContainer>
+          <ButtonWrapper>
+            <Button>
+              <GoPeople />
+            </Button>
+            <ButtonName>동호회</ButtonName>
+          </ButtonWrapper>
 
-      <ChartContainer>
-        <ChartNameWrapper>
-          <ChartName>도전과제 클리어</ChartName>
-        </ChartNameWrapper>
-        <Chart />
-      </ChartContainer>
-    </Container>
+          <ButtonWrapper>
+            <Button>
+              <CiShoppingCart />
+            </Button>
+            <ButtonName>상점</ButtonName>
+          </ButtonWrapper>
+        </ButtonContainer>
+
+        <ChartContainer>
+          <ChartNameWrapper>
+            <ChartName>도전과제 클리어</ChartName>
+          </ChartNameWrapper>
+          <Chart />
+        </ChartContainer>
+      </Container>
+    </>
   );
 }
 
