@@ -7,8 +7,15 @@ import { CiShoppingCart } from "react-icons/ci";
 import Chart from "../components/Charts";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { useNavigate } from "react-router-dom";
 
 function MainPage() {
+  const navigate = useNavigate();
+
+  const toMissionHandler = () => {
+    navigate("/mission");
+  };
+
   return (
     <>
       <Header />
@@ -16,7 +23,7 @@ function MainPage() {
       <Container>
         <ButtonContainer>
           <ButtonWrapper>
-            <Button>
+            <Button onClick={toMissionHandler}>
               <CiCircleCheck />
             </Button>
             <ButtonName>도전과제</ButtonName>
