@@ -6,6 +6,7 @@ import { GoPeople } from "react-icons/go";
 import { CiShoppingCart } from "react-icons/ci";
 import Chart from "../components/Charts";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 function MainPage() {
   return (
@@ -50,6 +51,8 @@ function MainPage() {
           <Chart />
         </ChartContainer>
       </Container>
+
+      <Footer />
     </>
   );
 }
