@@ -4,13 +4,16 @@ import Logo from "../assets/Logo.png";
 import { AiOutlineBell } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import { cursorTo } from "readline";
 
 function Header() {
   const navigate = useNavigate();
 
   const toMainHandler = () => {
     navigate("/main");
+  };
+
+  const toMissionPage = () => {
+    navigate("/mission");
   };
 
   return (
@@ -23,7 +26,7 @@ function Header() {
             </PageButton>
 
             <ButtonContainer>
-              <PageButton>도전과제</PageButton>
+              <PageButton onClick={toMissionPage}>도전과제</PageButton>
               <PageButton>정보제공</PageButton>
               <PageButton>취미관리</PageButton>
               <PageButton>동호회</PageButton>
