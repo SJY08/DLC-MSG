@@ -4,20 +4,29 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { FaCircleCheck } from "react-icons/fa6";
 import { PiBarbellLight } from "react-icons/pi";
-import Modal from "../components/Modal";
-import { useState, useCallback } from "react";
+import Modal from "../components/Mission/Modal";
+import { useState, useCallback, useEffect } from "react";
+import Clear from "../components/Mission/Clear";
 
 function MissionPage() {
+  const [clear, setClear] = useState<Boolean>(false);
   const [isOpenModal, setIsOpenModal] = useState<Boolean>(false);
 
   const onClickToggleModal = useCallback(() => {
     setIsOpenModal(!isOpenModal);
+    setClear(true);
+
+    setTimeout(() => {
+      setClear(false);
+    }, 2500);
   }, [isOpenModal]);
 
   return (
     <>
       <Background>
         <Header />
+
+        {clear && <Clear />}
         {isOpenModal && (
           <Modal
             title="등반하고 인증사진 찍기"
