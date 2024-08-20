@@ -51,12 +51,13 @@ export default Header;
 
 const Background = styled.div`
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
-  border-bottom: 1px solid ${Colors.Gray50};
+  border-bottom: 1px solid ${Colors.Gray100};
+  margin-bottom: 5px;
 `;
 
 const Container = styled.div`
@@ -93,7 +94,7 @@ const PageButton = styled.button`
   border: none;
   cursor: pointer;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 const IconButton = styled.div`
