@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "../styles/colors";
 import Logo from "../assets/Logo.png";
-import Input from "../components/Input";
+import Input from "../components/common/Input";
 import { useNavigate } from "react-router-dom";
 
 function FormPage() {

@@ -16,6 +16,10 @@ function MainPage() {
     navigate("/mission");
   };
 
+  const toInformHandler = () => {
+    navigate("/inform");
+  };
+
   return (
     <>
       <Header />
@@ -30,10 +34,10 @@ function MainPage() {
           </ButtonWrapper>
 
           <ButtonWrapper>
-            <Button>
+            <Button onClick={toInformHandler}>
               <CiViewList />
             </Button>
-            <ButtonName>취미관리</ButtonName>
+            <ButtonName>정보제공</ButtonName>
           </ButtonWrapper>
 
           <ButtonWrapper>

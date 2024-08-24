@@ -5,6 +5,7 @@ import SignUpPage from "./pages/SignUpPage";
 import FormPage from "./pages/FormPage";
 import MainPage from "./pages/MainPage";
 import MissionPage from "./pages/MissionPage";
+import InformPage from "./pages/InformPage";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
         <Route path="/form" element={<FormPage />} />
         <Route path="/main" element={<MainPage />} />
         <Route path="/mission" element={<MissionPage />} />
+        <Route path="/inform" element={<InformPage />} />
       </Routes>
     </BrowserRouter>
   );

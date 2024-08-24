@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "../styles/colors";
+import { Colors } from "../../styles/colors";
 
 interface inputs {
   type: string;
@@ -56,6 +56,7 @@ const InputContainer = styled.div`
   border-radius: 10px;
   background: ${Colors.Gray50};
 `;
+
 
 const InputBox = styled.input`
   width: 350px;
