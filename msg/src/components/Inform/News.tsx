@@ -29,6 +29,7 @@ const Container = styled.div`
   height: 200px;
   padding: 10px;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 `;
 const Wrapper = styled.div`
@@ -39,6 +40,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: left;
   align-items: start;
+  flex-direction: column;
 `;
 
 const Entertainment = styled.p`

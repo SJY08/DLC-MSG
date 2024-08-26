@@ -27,6 +27,7 @@ const Container = styled.div`
   display: flex;
   justify-content: left;
   align-items: start;
+  flex-direction: column;
 `;
 
 const VideoImage = styled.div`
