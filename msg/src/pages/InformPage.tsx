@@ -33,7 +33,7 @@ function InformPage() {
 
           <NewsContainer>
             <ButtonContainer>
-              <Title>동영상</Title>
+              <Title>뉴스</Title>
               <AllButton>전체보기</AllButton>
             </ButtonContainer>
             <News title="응애" enter="응애" explain="응애" />
