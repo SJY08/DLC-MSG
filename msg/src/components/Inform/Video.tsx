@@ -7,12 +7,19 @@ interface Props {
 }
 
 function Video({ title, viewCount }: Props) {
+  let count = String(viewCount)
+    .split("")
+    .map((a, i) =>
+      i % 3 == 0 && i != String(viewCount).length - 1 ? a + "," : a
+    )
+    .join("");
+
   return (
     <>
       <Container>
         <VideoImage />
         <VideoTitle>{title}</VideoTitle>
-        <ViedoView>조회수 {viewCount}회</ViedoView>
+        <ViedoView>조회수 {count}회</ViedoView>
       </Container>
     </>
   );
@@ -26,6 +33,8 @@ const Container = styled.div`
   justify-content: left;
   align-items: center;
   flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
 `;
 
 const VideoImage = styled.div`
@@ -40,14 +49,13 @@ const VideoTitle = styled.p`
   width: 230px;
   height: 50px;
   font-size: 16px;
-  font-weight: bold;
   color: black;
 `;
 
 const ViedoView = styled.p`
   width: 230px;
   height: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: lighter;
   color: ${Colors.Gray500};
 `;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "../styles/colors";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Video from "../components/Inform/Video";
@@ -12,19 +11,46 @@ function AllVideo() {
         <VideoContainer>
           <Title>동영상</Title>
           <VideoWrapper>
-            <Video />
-            <Video />
-            <Video />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
           </VideoWrapper>
           <VideoWrapper>
-            <Video />
-            <Video />
-            <Video />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
           </VideoWrapper>
           <VideoWrapper>
-            <Video />
-            <Video />
-            <Video />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
+            <Video
+              title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+              viewCount={1350000}
+            />
           </VideoWrapper>
         </VideoContainer>
       </Background>
@@ -63,5 +89,5 @@ const VideoWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 `;
