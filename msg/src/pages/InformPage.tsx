@@ -2,11 +2,17 @@ import styled from "styled-components";
 import { Colors } from "../styles/colors";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import React from "react";
 import Video from "../components/Inform/Video";
 import News from "../components/Inform/News";
+import { useNavigate } from "react-router-dom";
 
 function InformPage() {
+  const navigate = useNavigate();
+
+  const toVideoHandler = () => {
+    navigate("/video");
+  };
+
   return (
     <>
       <Background>
@@ -16,7 +22,7 @@ function InformPage() {
           <VideoContainer>
             <ButtonContainer>
               <Title>동영상</Title>
-              <AllButton>전체보기</AllButton>
+              <AllButton onClick={toVideoHandler}>전체보기</AllButton>
             </ButtonContainer>
             <VideoWrapper>
               <Video />
