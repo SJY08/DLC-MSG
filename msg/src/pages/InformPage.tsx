@@ -13,6 +13,10 @@ function InformPage() {
     navigate("/video");
   };
 
+  const toNewsHandler = () => {
+    navigate("/news");
+  };
+
   return (
     <>
       <Background>
@@ -25,21 +29,46 @@ function InformPage() {
               <AllButton onClick={toVideoHandler}>전체보기</AllButton>
             </ButtonContainer>
             <VideoWrapper>
-              <Video />
-              <Video />
-              <Video />
+              <Video
+                title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+                viewCount={1350000}
+              />
+              <Video
+                title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+                viewCount={1350000}
+              />
+              <Video
+                title="평범한 사람이 정기적으로 러닝을 했더니 나타난 놀라운 변화 | 러닝과 학습능력, 러너스하 원리, 러닝 크루"
+                viewCount={1350000}
+              />
             </VideoWrapper>
           </VideoContainer>
 
           <NewsContainer>
             <ButtonContainer>
               <Title>뉴스</Title>
-              <AllButton>전체보기</AllButton>
+              <AllButton onClick={toNewsHandler}>전체보기</AllButton>
             </ButtonContainer>
-            <News title="응애" enter="응애" explain="응애" />
-            <News title="응애" enter="응애" explain="응애" />
-            <News title="응애" enter="응애" explain="응애" />
-            <News title="응애" enter="응애" explain="응애" />
+            <News
+              enter="연합뉴스"
+              title="목요일 저녁, 야식 대신 뛰어볼까…'7979 서울 러닝크루'"
+              explain="러닝크루는 참여한 시민이 러닝을 종료한 뒤에 공식 구호 '7979'를 외치면 1인당 7천979원이 적립되는 '같이 달리는 가치 있는 달리기' 형식이다."
+            />
+            <News
+              enter="연합뉴스"
+              title="목요일 저녁, 야식 대신 뛰어볼까…'7979 서울 러닝크루'"
+              explain="러닝크루는 참여한 시민이 러닝을 종료한 뒤에 공식 구호 '7979'를 외치면 1인당 7천979원이 적립되는 '같이 달리는 가치 있는 달리기' 형식이다."
+            />
+            <News
+              enter="연합뉴스"
+              title="목요일 저녁, 야식 대신 뛰어볼까…'7979 서울 러닝크루'"
+              explain="러닝크루는 참여한 시민이 러닝을 종료한 뒤에 공식 구호 '7979'를 외치면 1인당 7천979원이 적립되는 '같이 달리는 가치 있는 달리기' 형식이다."
+            />
+            <News
+              enter="연합뉴스"
+              title="목요일 저녁, 야식 대신 뛰어볼까…'7979 서울 러닝크루'"
+              explain="러닝크루는 참여한 시민이 러닝을 종료한 뒤에 공식 구호 '7979'를 외치면 1인당 7천979원이 적립되는 '같이 달리는 가치 있는 달리기' 형식이다."
+            />
           </NewsContainer>
         </Container>
       </Background>

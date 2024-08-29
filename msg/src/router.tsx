@@ -7,6 +7,7 @@ import MainPage from "./pages/MainPage";
 import MissionPage from "./pages/MissionPage";
 import InformPage from "./pages/InformPage";
 import AllVideo from "./pages/AllVideo";
+import AllNews from "./pages/AllNews";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
         <Route path="/mission" element={<MissionPage />} />
         <Route path="/inform" element={<InformPage />} />
         <Route path="/video" element={<AllVideo />} />
+        <Route path="/news" element={<AllNews />} />
       </Routes>
     </BrowserRouter>
   );
