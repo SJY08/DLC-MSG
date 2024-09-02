@@ -2,12 +2,17 @@ import styled from "styled-components";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Video from "../components/Inform/Video";
+import Before from "../components/Before";
 
 function AllVideo() {
   return (
     <>
       <Background>
         <Header />
+
+        <Wrapper>
+          <Before />
+        </Wrapper>
         <VideoContainer>
           <Title>동영상</Title>
           <VideoWrapper>
@@ -70,6 +75,10 @@ const Background = styled.div`
   gap: 20px;
 `;
 
+const Wrapper = styled.div`
+  width: 730px;
+`;
+
 const Title = styled.p`
   width: 730px;
   font-size: 20px;
@@ -82,6 +91,7 @@ const VideoContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 50px;
   gap: 10px;
 `;
 

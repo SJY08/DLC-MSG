@@ -2,12 +2,16 @@ import styled from "styled-components";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import News from "../components/Inform/News";
+import Before from "../components/Before";
 
 function AllNews() {
   return (
     <>
       <Background>
         <Header />
+        <Wrapper>
+          <Before />
+        </Wrapper>
 
         <NewsContainer>
           <Title>뉴스</Title>
@@ -54,11 +58,14 @@ const Background = styled.div`
   gap: 20px;
 `;
 
+const Wrapper = styled.div`
+  width: 750px;
+`;
+
 const Title = styled.p`
   width: 750px;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
 `;
 
 const NewsContainer = styled.div`
@@ -66,5 +73,6 @@ const NewsContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 50px;
   gap: 10px;
 `;
