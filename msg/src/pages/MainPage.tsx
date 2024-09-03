@@ -20,6 +20,10 @@ function MainPage() {
     navigate("/inform");
   };
 
+  const toClubHandler = () => {
+    navigate("/club");
+  };
+
   return (
     <>
       <Header />
@@ -41,7 +45,7 @@ function MainPage() {
           </ButtonWrapper>
 
           <ButtonWrapper>
-            <Button>
+            <Button onClick={toClubHandler}>
               <GoPeople />
             </Button>
             <ButtonName>동호회</ButtonName>

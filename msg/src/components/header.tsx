@@ -20,6 +20,10 @@ function Header() {
     navigate("/inform");
   };
 
+  const toClub = () => {
+    navigate("/club");
+  };
+
   return (
     <>
       <Background>
@@ -32,7 +36,7 @@ function Header() {
             <ButtonContainer>
               <PageButton onClick={toMissionPage}>도전과제</PageButton>
               <PageButton onClick={toInform}>정보제공</PageButton>
-              <PageButton>동호회</PageButton>
+              <PageButton onClick={toClub}>동호회</PageButton>
               <PageButton>상점</PageButton>
             </ButtonContainer>
           </LeftContainer>
