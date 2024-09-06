@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "../styles/colors";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/common/header";
+import Footer from "../components/common/footer"
 import { FaCircleCheck } from "react-icons/fa6";
 import { PiBarbellLight } from "react-icons/pi";
 import Modal from "../components/Mission/Modal";
