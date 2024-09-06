@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Colors } from "../../styles/colors"
-import Logo from "../assets/Logo.png"
+import Logo from "../../assets/Logo.png"
 import { AiOutlineBell } from "react-icons/ai"
 import { BsFillPersonFill } from "react-icons/bs"
 import { useNavigate } from "react-router-dom"

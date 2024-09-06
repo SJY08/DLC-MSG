@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Colors } from "../styles/colors";
-import Logo from "../assets/Logo.png";
+import { Colors } from "../../styles/colors";
+import Logo from "../../assets/Logo.png";
 import { useNavigate } from "react-router-dom";
 
 function StartPage() {
