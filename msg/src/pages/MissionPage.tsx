@@ -5,7 +5,7 @@ import Footer from "../components/common/footer"
 import { FaCircleCheck } from "react-icons/fa6";
 import { PiBarbellLight } from "react-icons/pi";
 import Modal from "../components/Mission/Modal";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import Clear from "../components/Mission/Clear";
 
 function MissionPage() {
