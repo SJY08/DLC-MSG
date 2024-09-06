@@ -7,20 +7,24 @@ interface props {
     title?: string
     toAll?: () => void
     children?: ReactNode
+    showButton?: boolean
 }
 
-function PostContainer({ title, toAll, children }: props) {
+function PostContainer({ title, toAll, children, showButton = true }: props) {
     return (
         <>
             <Container>
                 <PostsTitleContainer>
                     <PostsTitle>{title}</PostsTitle>
-                    <ButtonWrapper onClick={toAll}>
-                        <ToAllButton>전체보기</ToAllButton>
-                        <ButtonIcon>
-                            <IoIosArrowForward />
-                        </ButtonIcon>
-                    </ButtonWrapper>
+
+                    {showButton && (
+                        <ButtonWrapper onClick={toAll}>
+                            <ToAllButton>전체보기</ToAllButton>
+                            <ButtonIcon>
+                                <IoIosArrowForward />
+                            </ButtonIcon>
+                        </ButtonWrapper>
+                    )}
                 </PostsTitleContainer>
                 {children}
             </Container>
