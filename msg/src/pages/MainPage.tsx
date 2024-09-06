@@ -5,8 +5,8 @@ import { CiViewList } from "react-icons/ci";
 import { GoPeople } from "react-icons/go";
 import { CiShoppingCart } from "react-icons/ci";
 import Chart from "../components/Charts";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/common/header";
+import Footer from "../components/common/footer";
 import { useNavigate } from "react-router-dom";
 
 function MainPage() {
