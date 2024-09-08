@@ -7,12 +7,7 @@ interface Props {
 }
 
 function Video({ title, viewCount }: Props) {
-  let count = String(viewCount)
-    .split("")
-    .map((a, i) =>
-      i % 3 == 0 && i != String(viewCount).length - 1 ? a + "," : a
-    )
-    .join("");
+  let count = viewCount?.toLocaleString()
 
   return (
     <>
