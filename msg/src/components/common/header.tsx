@@ -24,6 +24,10 @@ function Header() {
         navigate("/club")
     }
 
+    const toShop = () => {
+        navigate("/shop")
+    }
+
     return (
         <>
             <Background>
@@ -39,7 +43,7 @@ function Header() {
                             </PageButton>
                             <PageButton onClick={toInform}>정보제공</PageButton>
                             <PageButton onClick={toClub}>동호회</PageButton>
-                            <PageButton>상점</PageButton>
+                            <PageButton onClick={toShop}>상점</PageButton>
                         </ButtonContainer>
                     </LeftContainer>
                     <RightContainer>
