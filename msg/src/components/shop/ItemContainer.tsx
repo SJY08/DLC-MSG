@@ -1,14 +1,16 @@
 import styled from "styled-components"
 import { Colors } from "../../styles/colors"
 import { ReactNode } from "react"
+import { IoIosArrowForward } from "react-icons/io"
 
 interface Props {
     name?: string
     subName?: string
     children?: ReactNode
+    toAll?: () => void
 }
 
-function ItemContainer({ name, subName, children }: Props) {
+function ItemContainer({ name, subName, children, toAll }: Props) {
     return (
         <>
             <Container>
@@ -16,6 +18,13 @@ function ItemContainer({ name, subName, children }: Props) {
                     <TitleContainer>
                         <Title>{name}</Title>
                         <SubTitle>{subName}</SubTitle>
+
+                        <ToAllButtonContainer onClick={toAll}>
+                            <ToAllText>전체보기</ToAllText>
+                            <ToAllIcon>
+                                <IoIosArrowForward />
+                            </ToAllIcon>
+                        </ToAllButtonContainer>
                     </TitleContainer>
                 )}
 
@@ -54,6 +63,26 @@ const Title = styled.p`
 const SubTitle = styled.p`
     color: ${Colors.Gray500};
     font-size: 16px;
+`
+
+const ToAllButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;
+`
+
+const ToAllText = styled.p`
+    font-size: 16px;
+    color: black;
+`
+
+const ToAllIcon = styled.span`
+    font-size: 14px;
+    margin-top: 2px;
+    color: black;
 `
 
 const ChildrenContainer = styled.div`

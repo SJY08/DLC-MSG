@@ -14,6 +14,8 @@ import NoticePost from "./pages/Club/NoticePost"
 import TopPost from "./pages/Club/TopPost"
 import AllPosts from "./pages/Club/AllPosts"
 import ShopPage from "./pages/shop/ShopPage"
+import SaleItemsPage from "./pages/shop/SaleItemsPage"
+import ItemsPage from "./pages/shop/ItemsPage"
 
 function Router() {
     return (
@@ -34,6 +36,8 @@ function Router() {
                 <Route path="/top" element={<TopPost />} />
                 <Route path="/posts" element={<AllPosts />} />
                 <Route path="/shop" element={<ShopPage />} />
+                <Route path="/sale" element={<SaleItemsPage />} />
+                <Route path="/items" element={<ItemsPage />} />
             </Routes>
         </BrowserRouter>
     )
