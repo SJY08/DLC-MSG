@@ -19,12 +19,14 @@ function ItemContainer({ name, subName, children, toAll }: Props) {
                         <Title>{name}</Title>
                         <SubTitle>{subName}</SubTitle>
 
-                        <ToAllButtonContainer onClick={toAll}>
-                            <ToAllText>전체보기</ToAllText>
-                            <ToAllIcon>
-                                <IoIosArrowForward />
-                            </ToAllIcon>
-                        </ToAllButtonContainer>
+                        {toAll && (
+                            <ToAllButtonContainer onClick={toAll}>
+                                <ToAllText>전체보기</ToAllText>
+                                <ToAllIcon>
+                                    <IoIosArrowForward />
+                                </ToAllIcon>
+                            </ToAllButtonContainer>
+                        )}
                     </TitleContainer>
                 )}
 
